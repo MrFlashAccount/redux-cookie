@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-redux-cookie-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a redux middleware to deal with cookies in isomorphic way",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -32,9 +32,6 @@
   "peerDependencies": {
     "redux": "4.0.0",
     "universal-cookie": "4.0.0"
-  },
-  "dependencies": {
-    "universal-cookie": "4.0.3"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "4.3.1",
