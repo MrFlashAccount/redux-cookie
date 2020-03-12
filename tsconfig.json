@@ -4,32 +4,18 @@
     "strict": true,
     "esModuleInterop": true,
     "pretty": true,
-    "target": "esnext",
+    "target": "es2015",
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
-    "baseUrl": "./src",
+    "baseUrl": "./",
+    "outDir": "./dist/",
+    "tsBuildInfoFile": "./.cache/tsbuildinfo",
     "lib": ["es2019", "dom"],
     "sourceMap": true,
     "resolveJsonModule": true,
     "incremental": true,
-    "tsBuildInfoFile": "./webpack/cache/",
-    "typeRoots": ["./src/types", "./node_modules/@types"],
-    "skipLibCheck": true,
-    "checkJs": true,
-    "allowJs": true,
-    "noEmit": true
+    "removeComments": false
   },
-  "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "dist",
-    "public",
-    "webpack",
-    "jest",
-    "src/setupTests.ts",
-    "**/*/*.test.ts",
-    "examples"
-  ]
+  "include": ["./index.ts"],
+  "exclude": ["node_modules", "build", "dist", "public", "webpack", "jest", "tests", "examples"]
 }

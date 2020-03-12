@@ -3,7 +3,6 @@
   "extends": [
     "airbnb-typescript",
     "prettier",
-    "prettier/react",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
@@ -18,20 +17,8 @@
       "jsx": true
     }
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
   "rules": {
-    "react/prop-types": 0,
     "prettier/prettier": ["error", { "singleQuote": true }],
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".tsx"]
-      }
-    ],
     "no-underscore-dangle": 0,
     "no-nested-ternary": 1,
     "no-use-before-define": 0,
@@ -65,76 +52,11 @@
 
     "jsx-a11y/label-has-associated-control": 0,
 
-    "react/jsx-props-no-spreading": 0,
-    "react/button-has-type": 0,
-    "react/destructuring-assignment": 0,
-    "react/prefer-stateless-function": 0,
-    "react/static-property-placement": 0,
-    "react/sort-comp": [
-      2,
-      {
-        "order": [
-          "static-methods",
-          "lifecycle",
-          "render",
-          "/^render.+$/",
-          "/^_render.+$/",
-          "/^on.+$/",
-          "everything-else"
-        ],
-        "groups": {
-          "lifecycle": [
-            "displayName",
-            "propTypes",
-            "contextTypes",
-            "childContextTypes",
-            "mixins",
-            "statics",
-            "defaultProps",
-            "constructor",
-            "getDefaultProps",
-            "state",
-            "getInitialState",
-            "getChildContext",
-            "getDerivedStateFromProps",
-            "componentWillMount",
-            "UNSAFE_componentWillMount",
-            "componentDidMount",
-            "componentWillReceiveProps",
-            "UNSAFE_componentWillReceiveProps",
-            "shouldComponentUpdate",
-            "componentWillUpdate",
-            "UNSAFE_componentWillUpdate",
-            "getSnapshotBeforeUpdate",
-            "componentDidUpdate",
-            "componentDidCatch",
-            "componentWillUnmount"
-          ]
-        }
-      }
-    ],
-
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
     "no-extra-boolean-cast": 0
   },
   "globals": {
     "window": true,
     "document": true,
     "jest": true
-  },
-  "overrides": [
-    {
-      "files": ["src/entries/platform/index.tsx"],
-      "rules": {
-        "import/no-default-export": 0
-      }
-    },
-    {
-      "files": ["src/features/**/ducks/*.ts", "reducer.ts"],
-      "rules": {
-        "import/no-default-export": 0
-      }
-    }
-  ]
+  }
 }
