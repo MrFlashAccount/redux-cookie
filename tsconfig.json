@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "pretty": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "./src",
+    "lib": ["es2019", "dom"],
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./webpack/cache/",
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "skipLibCheck": true,
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "public",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "**/*/*.test.ts",
+    "examples"
+  ]
+}

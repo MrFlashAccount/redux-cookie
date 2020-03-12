@@ -1,0 +1,57 @@
+{
+  "name": "isomorphic-redux-cookie-middleware",
+  "version": "1.0.1",
+  "description": "a redux middleware to deal with cookies in isomorphic way",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "declarations": "tsc -p ./tsconfig.declaration.json",
+    "test": "jest && size-limit",
+    "size": "size-limit",
+    "prepublishOnly": "npm run build && npm run declarations",
+    "publish": "clean-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrFlashAccount/redux-cookie.git"
+  },
+  "keywords": [
+    "redux",
+    "cookie",
+    "miidleware",
+    "typescript"
+  ],
+  "author": "@MrFlashAccount",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrFlashAccount/redux-cookie/issues"
+  },
+  "homepage": "https://github.com/MrFlashAccount/redux-cookie#readme",
+  "peerDependencies": {
+    "redux": "4.0.0",
+    "universal-cookie": "4.0.0"
+  },
+  "dependencies": {
+    "universal-cookie": "4.0.3"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "4.3.1",
+    "clean-publish": "1.1.6",
+    "eslint": "^6.8.0",
+    "jest": "25.1.0",
+    "prettier": "1.19.1",
+    "redux": "^4.0.5",
+    "size-limit": "4.3.1",
+    "ts-jest": "25.2.1",
+    "typescript": "3.8.3",
+    "universal-cookie": "4.0.3"
+  },
+  "size-limit": [
+    {
+      "path": "./dist/index.js",
+      "limit": "500b"
+    }
+  ]
+}
