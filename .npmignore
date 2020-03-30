@@ -3,7 +3,7 @@ yarn-error.log
 yarn.lock
 
 .editorconfig
-test/
+tests/
 coverage/
 .travis.yml
 api.md
@@ -13,4 +13,3 @@ img/
 .cache
 .idea
 tsconfig*.json
-src/

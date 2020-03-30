@@ -13,7 +13,10 @@ export function createReducer(cookies: string) {
       }
 
       return {
-        ...cookieWorker.getAll(),
+        cookieString: cookieWorker.getAll({ doNotParse: true }) as string,
+        cookies: {
+          ...(cookieWorker.getAll() as Record<string, string>),
+        },
       };
     }
 
