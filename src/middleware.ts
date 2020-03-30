@@ -20,7 +20,7 @@ export function createMiddleware() {
 
   return () => (next: Dispatch) => (action: ReducerAction) => {
     if (action.type in actionsMap) {
-      return actionsMap[action.type](action);
+      return next(actionsMap[action.type](action));
     }
 
     return next(action);
