@@ -21,7 +21,6 @@ export function createReducer(cookies: string) {
 
 function getState(cookieWorker: Cookies) {
   return {
-    cookieString: cookieWorker.getAll({ doNotParse: true }) as string,
     cookies: {
       ...(cookieWorker.getAll() as Record<string, string>),
     },
