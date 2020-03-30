@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-redux-cookie-middleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a redux middleware to deal with cookies in isomorphic way",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
